@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ii-kt.github.io/kitworks-portfolio/sitemap.xml
