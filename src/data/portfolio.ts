@@ -3,250 +3,160 @@ export const contact = {
   brand: 'KiT Works',
   location: '静岡県浜松市',
   email: 'ii.kt@outlook.com',
-  availability: '週1〜2日 / フルリモート中心 / 平日夜間・土日相談可',
+  availability: 'フルリモート中心 / 平日夜間・土日相談可',
 };
 
-export const heroFacts = [
-  {
-    label: '経験領域',
-    value: 'IT業界 約7年',
-    note: '開発、PMO補佐、PL、業務改善、顧客折衝を経験',
-  },
-  {
-    label: '現場改善',
-    value: 'AI / Slack / Box / API連携',
-    note: '議事録、レビュー、情報確認、資料作成の効率化を支援',
-  },
-  {
-    label: 'PMO / PL',
-    value: '5名チーム管理・週次報告',
-    note: 'Jira導入、Slack活用、Confluence運用、成果物監査',
-  },
+export const heroStats = [
+  { label: 'IT業界経験', value: '約7年', note: '開発・PMO・PL・業務改善' },
+  { label: '直近の軸', value: 'AI/RAG × PMO', note: '仕様書探索と成果物品質管理' },
+  { label: '現場推進', value: '5名チーム管理', note: 'Jira・週次報告・成果物監査' },
 ];
 
-export const proofHighlights = [
-  'PMO補佐 / PL / 業務改善 / 開発支援',
-  '生成AI / Slack / Box / API連携による業務効率化支援',
-  '5名チームのタスク管理、週次報告、Jira導入経験',
-  'DatadogからSplunkへの移行、ログ可視化・アラート設計支援',
-  'C/C++・Pythonを用いた開発、車載・組み込み領域の実務経験',
-  '顧客折衝、要件調整、仕様策定、設計・実装・テストまでの対応経験',
+export const strengths = [
+  {
+    title: 'AI/RAGを業務フローに組み込む',
+    lead: '仕様書探索、レビュー観点整理、Slack要約、Box連携検索まで、現場の確認作業に合わせて設計します。',
+    points: ['RAG型仕様書チャットボット', 'LangChain / MCP / API連携', 'プロンプト・AGENTS.md・Skills運用整理'],
+  },
+  {
+    title: 'PMO・成果物品質管理で前に進める',
+    lead: '進捗、課題、成果物、会議体を整理し、チームが判断・実行しやすい状態を作ります。',
+    points: ['Jiraチケット作成・担当割り振り', 'トレーサビリティ作成・管理・監査', '週次報告・リーダー会資料作成'],
+  },
+  {
+    title: '要件・仕様・開発をつなぐ',
+    lead: '顧客要望や曖昧な論点を、仕様、設計、タスク、テスト観点へ落とし込みます。',
+    points: ['顧客折衝・仕様策定', 'C/C++・Python・C#開発', '車載・組み込み・ログ基盤・クラウド連携'],
+  },
 ];
 
 export const featuredCases = [
   {
     number: '01',
-    title: 'AI活用による業務効率化支援',
-    category: 'AI活用 / 業務改善 / 情報整理',
-    challenge:
-      '会議、レビュー、情報確認、資料作成、横断情報の確認など、日々の業務に確認・整理コストが発生していた。',
-    role: [
-      '生成AIを使った資料作成、調査、論点整理',
-      'レビュー観点整理、議事録作成支援、ToDo整理',
-      'Slack要約、Box連携検索、MCP/API連携の検討・実装',
-      'ローカルLLM活用検証',
-      'AGENTS.md / Skills 等によるAI活用時の指示設計',
-    ],
-    approach:
-      '単発のAI利用ではなく、既存のSlack、Box、レビュー業務、会議体に合わせて、使い続けられる運用に落とし込むことを重視。',
-    outcomes: [
-      '情報確認負荷の軽減',
-      'レビュー観点整理の効率化',
-      '議事録・ToDo整理の効率化',
-      '横断情報の確認効率向上',
-      'AI活用の再現性・品質安定化に貢献',
-    ],
-    tools: ['ChatGPT', 'Claude', 'Codex', 'Claude Code', 'MCP', 'API連携', 'Slack', 'Box', 'PlantUML', 'Qwen', 'HuggingFace'],
-    assignment:
-      'AIを業務フローへ組み込む検討、プロンプト・指示設計、情報整理、レビュー支援、社内ナレッジ検索の小規模検証を任せられます。',
+    title: 'RAG型仕様書チャットボット構築・生成AI活用支援',
+    domain: '製造 / 自動車・車載 / AI活用支援',
+    role: 'AI活用支援 / RAG構築 / 業務効率化推進',
+    challenge: 'Excel仕様書、要求仕様書、要件定義書、画面仕様書を横断して確認する負荷が高く、仕様探索を業務フローに組み込む必要があった。',
+    responsibility: 'LangChainを活用したRAG構成、検索対象資料の整理、チャンク分割方針、回答品質確認、Box連携検索、Slack要約、プロンプト調整を担当。',
+    contribution: '仕様書探索と仕様確認・参照業務の効率化を支援。複数PJへの展開、レビュー観点整理、AI活用時の再現性・品質安定化にも対応。',
+    tags: ['RAG', 'LangChain', 'MCP', 'Box連携検索', 'Slack/API連携', 'ローカルLLM', 'AGENTS.md', 'Skills'],
+    accent: 'ai',
   },
   {
     number: '02',
-    title: '大手製造業向け PMO / PL・プロセス改善支援',
-    category: 'PMO / PL / プロセス改善',
-    challenge:
-      '複数の成果物、会議体、進捗・課題情報が分散し、チーム状況やレビュー観点を継続的に把握しづらい状態があった。',
-    role: [
-      'プロセス適用、成果物監査、品質向上支援',
-      '5名チームのタスク管理、進捗確認、週次報告',
-      'リーダー会資料作成、会議体の整理',
-      'Jira導入、Slack活用、Confluence運用',
-      'レビュー観点整理、成果物確認の標準化支援',
-    ],
-    approach:
-      '管理のための管理にしないよう、現場で実際に使うタスク・課題・成果物に紐づけて、Jira、Slack、Confluenceの使い方を整理。',
-    outcomes: [
-      '進捗・課題の可視化',
-      'チーム運営と週次報告の支援',
-      '成果物品質の確認支援',
-      'プロセス標準化への貢献',
-      '複数プロジェクト横断の業務効率化',
-    ],
-    tools: ['Jira', 'Slack', 'Confluence', 'VSCode', 'PlantUML', '生成AI', 'MCP/API連携'],
-    assignment:
-      'PMO補佐、PL補佐、チームタスク管理、週次報告、Jira/Confluence運用整理、レビュー観点整備を任せられます。',
+    title: '大手製造業向け 開発プロセス適用・成果物監査・PMO支援',
+    domain: '製造 / 自動車・車載 / PMO',
+    role: 'チームリード / PMO支援 / 成果物品質管理',
+    challenge: '開発プロセス、成果物品質、トレーサビリティ、進捗・課題管理を整理し、プロジェクトを前に進める必要があった。',
+    responsibility: '基本設計、要求仕様書、要件定義書、画面仕様書の確認、トレーサビリティ作成・管理・監査、Jira運用、週次報告、5名チームのタスク管理を担当。',
+    contribution: '進捗・課題の可視化、成果物品質確認、作成チームへのフィードバック、チーム運営とプロセス標準化を支援。',
+    tags: ['Jira', 'Slack', 'Confluence', 'PlantUML', '成果物監査', 'トレーサビリティ', 'PMO'],
+    accent: 'pmo',
   },
   {
     number: '03',
-    title: '顧客折衝を含む仕様策定・開発支援',
-    category: '要件整理 / 仕様策定 / 開発支援',
-    challenge:
-      '顧客要望をそのまま実装に移すには曖昧な部分があり、仕様、設計、タスク、テスト観点へ落とし込む必要があった。',
-    role: [
-      '顧客との仕様策定、要件調整',
-      '設計、実装、テスト',
-      'C++ / C# 間のデータコンバート処理機能の開発',
-      'Redmine等を用いた課題・作業管理',
-    ],
-    approach:
-      '顧客側の要望と実装側の制約を分けて整理し、合意できる仕様、開発タスク、確認観点へ分解。',
-    outcomes: [
-      '顧客折衝を含む上流から下流までの一貫対応',
-      '仕様合意の支援',
-      '実装可能な形への要件整理',
-      '設計・実装・テストをつなげた開発推進',
-    ],
-    tools: ['C++', 'C#', 'Redmine', 'Visual Studio', 'BitBucket', 'Slack', 'Teams'],
-    assignment:
-      '曖昧な要望の整理、仕様策定、開発タスク化、実装・テスト観点整理、顧客と開発側の認識合わせを任せられます。',
+    title: '大手輸送用機器メーカー向けマウンター機開発',
+    domain: '製造 / 輸送用機器 / 開発支援',
+    role: '開発担当（顧客折衝・仕様策定含む）',
+    challenge: '顧客要望を実装可能な仕様へ落とし込み、C++とC#間のデータ連携処理を設計・実装・確認する必要があった。',
+    responsibility: '顧客との対話を通じた仕様策定、設計、実装、テスト、データコンバート処理の仕様理解と動作確認を担当。',
+    contribution: '仕様合意から設計・実装・テストまで一連の開発を支援し、顧客側と開発側の認識合わせを推進。',
+    tags: ['C++', 'C#', 'Redmine', 'Visual Studio', 'BitBucket', 'Slack', 'Teams'],
+    accent: 'dev',
   },
   {
     number: '04',
-    title: 'Datadog から Splunk へのログ管理基盤移行支援',
-    category: 'ログ分析 / 監視基盤 / データ可視化',
-    challenge:
-      '既存のDatadogクエリや監視内容を理解したうえで、Splunk側で同等の可視化・アラート設計へ移行する必要があった。',
-    role: [
-      'Datadogクエリ解析',
-      'Splunk SPLへの変換',
-      'ダッシュボード設計',
-      'アラート設計',
-      'SPL/DQLを用いた調査',
-    ],
-    approach:
-      '既存クエリの意味と監視目的を確認し、単純な構文変換だけでなく、移行後の運用で確認しやすい形を意識して整理。',
-    outcomes: [
-      'ログ管理基盤移行の支援',
-      '監視・可視化の整備',
-      'ダッシュボード・アラート設計支援',
-      '調査や確認作業の整理に貢献',
-    ],
-    tools: ['Splunk', 'Datadog', 'SPL', 'DQL', 'Amazon WorkSpaces'],
-    assignment:
-      '既存ログクエリの読み解き、Splunk移行、ダッシュボード・アラート設計、ログ調査の整理を任せられます。',
+    title: '統合ログ管理プラットフォーム導入支援',
+    domain: 'IT / ログ管理 / 監視基盤',
+    role: 'データエンジニア / 導入支援',
+    challenge: 'Datadogの既存監視内容を読み解き、Splunk側で監視・可視化を継続できる状態へ移行する必要があった。',
+    responsibility: 'Datadogクエリ解析、Splunk SPLへの変換、ダッシュボードおよびアラート機能の設計・実装を主導。',
+    contribution: 'ログ管理基盤移行を推進し、監視・可視化を継続するためのクエリ変換、ダッシュボード整備、アラート設計を実施。',
+    tags: ['Splunk', 'Datadog', 'SPL', 'DQL', 'Amazon WorkSpaces'],
+    accent: 'data',
   },
   {
     number: '05',
-    title: '車載・組み込み領域でのPL / 開発経験',
-    category: 'PL / 車載 / 組み込み開発',
-    challenge:
-      '車載・組み込み領域では、要件、設計、実装、評価、ツール設定、メンバー進捗をつなげて管理する必要があった。',
-    role: [
-      'AUTOSAR準拠の画像センサ開発',
-      'PLとしてのタスク管理、進捗管理、技術フォロー',
-      'DIAG機能の要件定義、設計、実装、評価',
-      'C/C++を中心とした車載・組み込み開発',
-    ],
-    approach:
-      '実装と評価の観点だけでなく、メンバーのタスク状況、技術的な詰まり、成果物の確認を並行して整理。',
-    outcomes: [
-      'PLとして開発推進を担当',
-      '要件定義から評価まで一貫対応',
-      '車載・組み込み開発経験をPMO/業務改善支援の土台として活用',
-      '管理側と実装側の両方の視点を獲得',
-    ],
-    tools: ['C', 'C++', 'AUTOSAR', 'CANoe', 'DaVinci', 'MATLAB', 'Simulink', 'Redmine', 'git'],
-    assignment:
-      '組み込み開発の仕様整理、進捗・課題管理、技術フォロー、評価観点整理、開発現場に近いPMO/PL補佐を任せられます。',
+    title: 'カーナビシステムのラジオ機能開発',
+    domain: '自動車 / 車載 / 組み込み',
+    role: '開発担当（顧客折衝含む）',
+    challenge: '国内および北欧向けカーナビのラジオ機能について、国内外担当者と仕様を調整しながら開発する必要があった。',
+    responsibility: '仕様策定・調整、C/C++による設計・実装・テスト、CANoe等を用いた確認を担当。',
+    contribution: '顧客・海外担当者との調整を含め、仕様策定から実装、テスト、動作確認まで対応。',
+    tags: ['C', 'C++', 'CANoe', 'VSCode', 'git', 'VirtualBox'],
+    accent: 'dev',
+  },
+  {
+    number: '06',
+    title: '画像センサ開発（AUTOSAR）',
+    domain: '自動車 / 車載 / AUTOSAR',
+    role: 'プロジェクトリーダー',
+    challenge: 'AUTOSAR準拠の次世代画像センサ開発で、DIAG機能の上流から下流までを推進する必要があった。',
+    responsibility: 'メンバーのタスク管理、進捗管理、技術フォロー、DIAG機能の要件定義、設計、実装、評価を担当。',
+    contribution: '技術面と管理面の両方から開発を推進し、AUTOSAR準拠DIAG機能の要件定義から評価まで対応。',
+    tags: ['C', 'AUTOSAR', 'CANoe', 'DaVinci', 'Redmine', 'git', 'Subversion'],
+    accent: 'pmo',
+  },
+  {
+    number: '07',
+    title: 'ストレージ製品のクラウド連携機能開発',
+    domain: 'ストレージ / クラウド連携',
+    role: '開発メンバー',
+    challenge: 'Linuxベースのストレージ製品からAWSクラウドへデータを転送する新機能を開発・評価する必要があった。',
+    responsibility: 'Pythonを用いたAWSクラウド転送機能の設計・実装、Linux環境での状態監視、性能モニタ評価を担当。',
+    contribution: '転送処理、状態確認、性能確認を含むクラウド連携機能の開発・検証に対応。',
+    tags: ['Python', 'Linux', 'AWS', 'git', 'VirtualBox'],
+    accent: 'data',
   },
 ];
 
-export const services = [
-  {
-    title: 'AI活用・情報整理',
-    lead: '生成AI、Slack、Box、API連携を使い、会議・レビュー・資料作成・検索の確認コストを下げます。',
-    items: ['生成AI活用相談', 'プロンプト・指示設計', '議事録・ToDo整理', 'Slack要約 / Box検索', 'MCP/API連携の小規模検証'],
-  },
-  {
-    title: 'PMO / PL 補佐',
-    lead: '開発現場の進捗、課題、成果物、会議体を整理し、チームが次に動きやすい状態を作ります。',
-    items: ['タスク管理', '週次報告', 'Jira運用整理', '会議体整理', 'レビュー観点整理'],
-  },
-  {
-    title: '業務改善・プロセス改善',
-    lead: '既存ツールと現場の作業に合わせて、情報の置き場、確認手順、成果物確認の流れを整えます。',
-    items: ['業務フロー整理', '課題・進捗の可視化', 'Confluence運用', '成果物確認の標準化', '改善案の小さな試作'],
-  },
-  {
-    title: '要件整理・開発支援',
-    lead: '顧客要望や現場課題を、仕様、設計、タスク、テスト観点へ落とし込みます。',
-    items: ['仕様策定', '設計・実装・テスト', 'Python業務支援ツール', 'C/C++開発経験', 'ログ分析・可視化支援'],
-  },
+export const aiSupports = [
+  { title: '仕様書探索 / RAG', body: 'Excel仕様書、要求仕様書、要件定義書、画面仕様書を対象に、検索対象資料とチャンク方針を整理。' },
+  { title: 'Box連携検索', body: 'Box上の業務ドキュメントを検索・参照しやすくする仕組みを検討・実装。' },
+  { title: 'Slack要約 / 議事録', body: 'Slack要約、会議内容からの議事録作成、決定事項・ToDo・論点整理に対応。' },
+  { title: 'レビュー観点整理', body: '基本設計、要求仕様書、要件定義書、画面仕様書の確認観点や妥当性確認を支援。' },
+  { title: 'AI活用時の指示設計', body: 'AGENTS.md、Skills、プロンプト設計を含め、AI出力の再現性と品質安定化を整理。' },
+  { title: '開発・レビュー支援', body: 'コード生成AIを活用した実装方針検討、修正案作成、レビュー対応を支援。' },
 ];
 
-export const strengths = [
-  {
-    title: '実務の中にAIを置ける',
-    body: 'AIを単発の相談相手で終わらせず、議事録、レビュー、Slack要約、Box検索、調査、資料作成など、日々の作業に組み込む視点があります。',
-  },
-  {
-    title: '開発と管理の間を整理できる',
-    body: '要件整理、仕様策定、設計、実装、テスト、評価、成果物レビューまで経験しているため、管理側と実装側の認識差を整理できます。',
-  },
-  {
-    title: '現場を前に進める段取りができる',
-    body: '5名チームのタスク管理、週次報告、Jira導入、Slack活用、Confluence運用、成果物監査など、実務に近い進行支援の経験があります。',
-  },
+export const pmoSupports = [
+  'Jiraチケット作成・担当割り振り',
+  '進捗確認・週次報告・リーダー会資料作成',
+  '5名チームのタスク管理・技術フォロー',
+  '成果物監査・レビュー観点整理',
+  'トレーサビリティ作成・管理・監査',
+  '作成チームへのフィードバック',
+  'Slack活用・Confluence運用',
+  'PlantUMLによる設計書コード化',
+  '業務フロー整理・プロセス標準化',
+];
+
+export const timeline = [
+  { period: '2024/12 - 現在', title: '開発プロセス適用・成果物監査・PMO支援', meta: '製造 / 自動車・車載', summary: '成果物確認、トレーサビリティ管理、Jira運用、週次報告、5名チームのタスク管理を担当。' },
+  { period: '2024/12 - 現在', title: 'RAG型仕様書チャットボット構築・AI活用支援', meta: '製造 / 自動車・車載 / 業務改善', summary: 'RAG構成、Box連携検索、Slack要約、プロンプト調整、複数PJ展開に対応。' },
+  { period: '2024/04 - 2024/11', title: 'マウンター機開発', meta: '製造 / 輸送用機器', summary: '顧客折衝、仕様策定、C++/C#間のデータ連携処理、設計・実装・テストを担当。' },
+  { period: '2023/12 - 2024/03', title: '統合ログ管理プラットフォーム導入支援', meta: 'IT / ログ管理 / 監視基盤', summary: 'Datadogクエリ解析、Splunk SPL変換、ダッシュボード・アラート設計を担当。' },
+  { period: '2022/07 - 2023/11', title: 'カーナビシステムのラジオ機能開発', meta: '自動車 / 車載', summary: '国内外担当者との仕様調整、C/C++設計・実装・テスト、CANoe確認に対応。' },
+  { period: '2022/04 - 2022/06', title: '決済システム導入支援', meta: '金融 / 決済', summary: 'Confluenceによる開発プロセス整備、Pythonでのデータ抽出・分析支援を担当。' },
+  { period: '2021/08 - 2022/04', title: '画像センサ開発（AUTOSAR）', meta: '自動車 / 車載 / 組み込み', summary: 'PLとしてタスク・進捗管理、DIAG機能の要件定義から評価まで担当。' },
+  { period: '2021/01 - 2021/07', title: 'ストレージ製品のクラウド連携機能開発', meta: 'ストレージ / クラウド連携', summary: 'Python、Linux、AWSを用いたデータ転送機能の設計・実装・評価を担当。' },
+  { period: '2020/07 - 2020/12', title: 'ネットワーク機器開発', meta: '通信 / ネットワーク機器', summary: 'Debian環境でC言語による機能開発、品質改善、不具合調査・修正に対応。' },
+  { period: '2020/05 - 2020/06', title: 'ボディ系ECU制御開発 / モデル検証', meta: '自動車 / モデルベース開発', summary: 'SimulinkモデルのBack-to-Back検証、MATLABによる試験ハーネス作成を担当。' },
+  { period: '2019/09 - 2020/03', title: 'カーナビゲーション開発', meta: '自動車 / 車載', summary: '通信機能のドライバ開発、詳細設計、単体テスト、結合試験設計を担当。' },
+];
+
+export const training = [
+  '2020/04 AWSおよびモデルベース開発研修（AWS基礎、MATLAB/Simulink基礎）',
+  '2019/04 - 2019/08 新入社員向け技術研修（C/C++、Linux、μITRON、AUTOSAR概論、TOPPERS/ATK2）',
 ];
 
 export const skillGroups = [
-  {
-    title: 'AI / Automation',
-    skills: ['ChatGPT', 'Claude', 'Copilot', 'Codex', 'Claude Code', 'HuggingFace', 'Qwen', 'MCP', 'API連携', 'Slack連携', 'Box連携', 'PlantUML'],
-  },
-  {
-    title: 'PM / Collaboration',
-    skills: ['Jira', 'Confluence', 'Slack', 'Teams', 'Redmine', 'BitBucket', 'Lightning Review'],
-  },
-  {
-    title: 'Programming',
-    skills: ['Python', 'C', 'C++', 'C#', 'Java基礎'],
-  },
-  {
-    title: 'Data / Log',
-    skills: ['Splunk', 'Datadog', 'SPL', 'DQL'],
-  },
-  {
-    title: 'Embedded / Automotive',
-    skills: ['AUTOSAR', 'CANoe', 'DaVinci Configurator', 'DaVinci Developer', 'MATLAB', 'Simulink', 'μITRON', 'TOPPERS/ATK2'],
-  },
-  {
-    title: 'Web / CMS',
-    skills: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEOメタ情報', 'OGP', 'sitemap.xml', 'robots.txt'],
-  },
+  { title: 'AI / RAG / Automation', skills: ['RAG', 'LangChain', 'MCP', '仕様書チャットボット', 'ChatGPT', 'Copilot', 'Anthropic Claude', 'Codex', 'Claude Code', 'HuggingFace', 'Qwen', 'ローカルLLM', 'API連携', 'Slack要約', 'Box連携検索', 'AGENTS.md', 'Skills', 'プロンプト設計', 'PlantUML'] },
+  { title: 'PM / Collaboration', skills: ['Jira', 'Confluence', 'Slack', 'Teams', 'Redmine', 'BitBucket', 'Lightning Review', 'Visual Studio', 'VSCode'] },
+  { title: 'Programming', skills: ['C', 'C++', 'Python', 'C#', 'Java基礎'] },
+  { title: 'Data / Log / Cloud', skills: ['Splunk', 'Datadog', 'SPL', 'DQL', 'AWS', 'Amazon WorkSpaces', 'Linux'] },
+  { title: 'Embedded / Automotive', skills: ['AUTOSAR', 'CANoe', 'DaVinci Configurator', 'DaVinci Developer', 'MATLAB', 'Simulink', 'μITRON', 'TOPPERS/ATK2'] },
+  { title: 'Web / CMS', skills: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEOメタ情報', 'OGP', 'sitemap.xml', 'robots.txt'] },
 ];
 
-export const workSteps = [
-  {
-    title: '現状整理',
-    body: '業務内容、課題、既存ツール、困っていることを確認します。',
-  },
-  {
-    title: '改善対象を絞る',
-    body: 'AI活用、業務整理、PMO補佐、ツール連携のどこから着手するかを決めます。',
-  },
-  {
-    title: '小さく試作',
-    body: '議事録、レビュー支援、Slack要約、検索支援など、小さい範囲で検証します。',
-  },
-  {
-    title: '運用に組み込む',
-    body: '手順、指示、確認観点を整え、継続利用できる形にします。',
-  },
-  {
-    title: '改善・定着',
-    body: '使いながら改善し、再現性と品質を高めます。',
-  },
-];
-
-export const certifications = ['GUGA Generative AI Passport', 'AWS Partner: Accreditation'];
+export const certifications = ['GUGA Generative AI Passport（Oct 2025 Certified）', 'AWS Partner: Accreditation（2020/04）', 'TOEIC公開テスト 510点（2019/03）'];
