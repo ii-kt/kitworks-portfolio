@@ -3,7 +3,6 @@ export const contact = {
   brand: 'KiT Works',
   location: '静岡県浜松市',
   email: 'ii.kt@outlook.com',
-  availability: 'フルリモート中心 / 平日夜間・土日相談可',
 };
 
 export const heroStats = [

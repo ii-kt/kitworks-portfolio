@@ -157,7 +157,6 @@ function App() {
               <MapPin size={16} aria-hidden="true" />
               {contact.location}
             </span>
-            <span>{contact.availability}</span>
             <a className="primary-button" href={`mailto:${contact.email}`}>
               <Mail size={18} aria-hidden="true" />
               メールで相談する
