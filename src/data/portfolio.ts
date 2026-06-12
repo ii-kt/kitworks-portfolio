@@ -158,4 +158,4 @@ export const skillGroups = [
   { title: 'Web / CMS', skills: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'SEOメタ情報', 'OGP', 'sitemap.xml', 'robots.txt'] },
 ];
 
-export const certifications = ['GUGA Generative AI Passport（Oct 2025 Certified）', 'AWS Partner: Accreditation（2020/04）', 'TOEIC公開テスト 510点（2019/03）'];
+export const certifications = ['GUGA Generative AI Passport（Oct 2025 Certified）', 'AWS Partner: Accreditation（2020/04）'];
