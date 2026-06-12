@@ -173,13 +173,17 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
   letter-spacing: -0.055em;
 }
 
-.hero h1 span {
+.hero-title-tail {
   display: block;
   color: transparent;
   background: linear-gradient(100deg, var(--text), #dce8f7 45%, var(--ai));
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+.hero-title-tail--mobile,
+.hero-lead--mobile { display: none; }
+
 
 .hero-lead {
   max-width: 760px;
@@ -459,12 +463,30 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 }
 
 @media (max-width: 760px) {
-  .portfolio-page { width: min(100% - 24px, 1180px); padding-top: 12px; }
-  .hero { border-radius: 24px; padding: 16px; }
-  .top-nav { justify-content: flex-start; margin-bottom: 26px; }
-  .hero-grid { grid-template-columns: 1fr; padding: 4px 2px 22px; }
-  .hero h1 { font-size: clamp(2.35rem, 15vw, 4rem); }
-  .workflow-visual { min-height: auto; padding: 18px; }
+  .portfolio-page { width: min(100% - 24px, 1180px); padding-top: 10px; }
+  .hero { border-radius: 24px; padding: 14px; }
+  .top-nav { gap: 7px; justify-content: flex-start; margin-bottom: 18px; }
+  .top-nav a { padding: 5px 10px; font-size: 0.76rem; line-height: 1.35; }
+  .hero-grid { grid-template-columns: 1fr; gap: 20px; padding: 0 0 16px; }
+  .hero-kicker { gap: 6px; margin-bottom: 8px; font-size: 0.68rem; letter-spacing: 0.08em; }
+  .hero h1 {
+    margin-bottom: 14px;
+    font-size: clamp(1.95rem, 9.2vw, 2.72rem);
+    line-height: 1.13;
+    letter-spacing: -0.035em;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+  .hero-title-tail--desktop,
+  .hero-lead--desktop { display: none; }
+  .hero-title-tail--mobile { display: flex; flex-wrap: wrap; }
+  .hero-title-tail--mobile span { white-space: nowrap; }
+  .hero-lead--mobile { display: block; }
+  .hero-lead { margin-bottom: 18px; font-size: 0.94rem; line-height: 1.7; }
+  .hero-actions { gap: 10px; }
+  .primary-button,
+  .secondary-button { padding: 11px 15px; }
+  .workflow-visual { min-height: auto; padding: 16px; }
   .workflow-line { left: 26px; }
   .workflow-node { width: 100%; justify-self: stretch !important; }
   .hero-stats,
@@ -485,7 +507,10 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
   .hero-actions { display: grid; }
   .primary-button,
   .secondary-button { width: 100%; }
-  .top-nav a { font-size: 0.76rem; padding: 6px 10px; }
+  .top-nav { gap: 6px; margin-bottom: 16px; }
+  .top-nav a { padding: 5px 9px; font-size: 0.72rem; }
+  .hero { padding: 12px; }
+  .hero h1 { font-size: clamp(1.82rem, 8.7vw, 2.22rem); }
   .flow-panel { align-items: flex-start; flex-direction: column; }
   .flow-panel span:not(:last-child)::after { content: ''; }
 }

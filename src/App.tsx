@@ -187,11 +187,20 @@ function Hero() {
           </p>
           <h1>
             AI/RAG × PMOで、
-            <span>開発現場の情報整理と品質管理を前に進める。</span>
+            <span className="hero-title-tail hero-title-tail--desktop">開発現場の情報整理と品質管理を前に進める。</span>
+            <span className="hero-title-tail hero-title-tail--mobile">
+              <span>開発現場の</span>
+              <span>情報整理と</span>
+              <span>品質管理を</span>
+              <span>支援する。</span>
+            </span>
           </h1>
-          <p className="hero-lead">
+          <p className="hero-lead hero-lead--desktop">
             RAG型仕様書チャットボット構築、成果物監査、トレーサビリティ管理、Jira運用、Slack活用まで。
             開発現場を理解した実務目線で、業務改善とプロジェクト推進を支援します。
+          </p>
+          <p className="hero-lead hero-lead--mobile">
+            AI/RAG × PMOで、開発現場の情報整理と品質管理を支援します。
           </p>
           <div className="hero-actions">
             <a className="primary-button" href={`mailto:${contact.email}`}>
