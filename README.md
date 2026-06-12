@@ -1,6 +1,6 @@
 # 案件応募用スキルシート
 
-スキル・職務経歴概要 | 最終更新: 2026/05/14
+スキル・職務経歴概要
 Portfolio Site: https://ii-kt.github.io/kitworks-portfolio/
 
 ## 基本プロフィール
