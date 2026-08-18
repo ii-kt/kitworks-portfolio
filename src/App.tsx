@@ -5,14 +5,12 @@ import {
   FileSearch,
   GitBranch,
   Mail,
-  MapPin,
   ShieldCheck,
   Sparkles,
 } from 'lucide-react';
 import type { ReactNode } from 'react';
 import {
   aiSupports,
-  certifications,
   contact,
   featuredCases,
   heroStats,
@@ -141,28 +139,6 @@ function App() {
             ))}
           </div>
         </Section>
-
-        <section className="contact-section" id="contact">
-          <div>
-            <p className="section-eyebrow">Contact</p>
-            <h2>AI/RAG活用、PMO支援、成果物品質管理のご相談に対応します。</h2>
-            <p>
-              開発現場の実務理解を土台に、要件整理、仕様策定、レビュー、プロセス改善、AI活用の運用整理まで横断的に支援します。
-            </p>
-            <TagList tags={certifications} />
-          </div>
-          <address className="contact-card">
-            <strong>{contact.name} / {contact.brand}</strong>
-            <span>
-              <MapPin size={16} aria-hidden="true" />
-              {contact.location}
-            </span>
-            <a className="primary-button" href={`mailto:${contact.email}`}>
-              <Mail size={18} aria-hidden="true" />
-              メールで相談する
-            </a>
-          </address>
-        </section>
       </main>
     </>
   );
@@ -176,7 +152,6 @@ function Hero() {
         <a href="#cases">Cases</a>
         <a href="#ai-rag">AI/RAG</a>
         <a href="#pmo">PMO</a>
-        <a href="#contact">Contact</a>
       </nav>
 
       <div className="hero-grid">

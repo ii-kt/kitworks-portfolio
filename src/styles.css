@@ -82,8 +82,7 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 }
 
 .hero,
-.section,
-.contact-section {
+.section {
   border: 1px solid var(--border);
   background: linear-gradient(145deg, rgba(17, 24, 39, 0.94), rgba(13, 27, 42, 0.9));
   box-shadow: var(--shadow);
@@ -295,15 +294,13 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 .hero-stats strong { display: block; font-family: 'Inter', sans-serif; font-size: 1.45rem; line-height: 1.2; }
 .hero-stats span { display: block; margin-top: 7px; font-size: 0.88rem; }
 
-.section,
-.contact-section {
+.section {
   margin-top: 22px;
   border-radius: var(--radius);
   padding: clamp(24px, 4.6vw, 46px);
 }
 
-.section > h2,
-.contact-section h2 {
+.section > h2 {
   margin-bottom: 24px;
   font-size: clamp(1.8rem, 4vw, 3.15rem);
   line-height: 1.16;
@@ -354,8 +351,7 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 .support-card p,
 .timeline-item p,
 .training-box li,
-.pmo-panel p,
-.contact-section p { color: var(--subtext); }
+.pmo-panel p { color: var(--subtext); }
 
 .check-list,
 .tag-list,
@@ -436,12 +432,6 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 .skill-group { padding: 20px; }
 .skill-group h3 { color: #f6e7c2; }
 
-.contact-section { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: 24px; align-items: center; }
-.contact-card { display: grid; gap: 12px; margin: 0; border: 1px solid var(--border); border-radius: 22px; background: rgba(255,255,255,0.05); padding: 22px; font-style: normal; }
-.contact-card strong { font-size: 1.1rem; }
-.contact-card span { display: flex; gap: 8px; align-items: center; color: var(--subtext); }
-.contact-card svg { color: var(--accent); }
-
 .reveal { animation: rise 650ms ease both; animation-delay: var(--delay, 0ms); }
 
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
@@ -454,7 +444,6 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 
 @media (max-width: 980px) {
   .hero-grid,
-  .contact-section,
   .pmo-panel { grid-template-columns: 1fr; }
   .workflow-visual { min-height: 320px; }
   .strength-grid,
@@ -495,8 +484,7 @@ h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
   .support-grid,
   .skill-grid,
   .pmo-list { grid-template-columns: 1fr; }
-  .section,
-  .contact-section { padding: 22px; border-radius: 20px; }
+  .section { padding: 22px; border-radius: 20px; }
   .timeline::before { left: 10px; }
   .timeline-item { grid-template-columns: 1fr; gap: 8px; padding-left: 28px; }
   .timeline-item::before { left: 4px; top: 6px; }
